@@ -1,6 +1,9 @@
 let mainCatalogSwiper = new Swiper(".main-catalog__swiper", {
   slidesPerView: 'auto',
   spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.3,
