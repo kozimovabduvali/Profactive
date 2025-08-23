@@ -31,6 +31,7 @@
     --default-mono-font-family: var(--font-mono);
     --font-inter: "Inter", sans-serif;
     --color-primary: #1e1e1e;
+    --color-brand-gray-100: #e8e8e8;
     --color-brand-gray-700: #393939;
     --color-brand-green-600: #ab803b;
     --color-brand-yellow-500: #f0e263;
@@ -318,6 +319,9 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-26 {
+    height: calc(var(--spacing) * 26);
+  }
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
@@ -440,6 +444,9 @@
   .gap-11 {
     gap: calc(var(--spacing) * 11);
   }
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
   .space-y-1 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -461,11 +468,26 @@
       margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .gap-x-5 {
+    column-gap: calc(var(--spacing) * 5);
+  }
   .gap-x-7 {
     column-gap: calc(var(--spacing) * 7);
   }
+  .gap-x-11 {
+    column-gap: calc(var(--spacing) * 11);
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
+  }
+  .gap-y-3\.5 {
+    row-gap: calc(var(--spacing) * 3.5);
+  }
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
+  }
+  .gap-y-11 {
+    row-gap: calc(var(--spacing) * 11);
   }
   .gap-y-13 {
     row-gap: calc(var(--spacing) * 13);
@@ -644,6 +666,15 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-brand-gray-100 {
+    color: var(--color-brand-gray-100);
+  }
+  .text-brand-gray-100\/50 {
+    color: color-mix(in srgb, #e8e8e8 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-brand-gray-100) 50%, transparent);
+    }
+  }
   .text-primary {
     color: var(--color-primary);
   }
@@ -664,6 +695,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
   }
   .hover-opacity-75 {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
@@ -836,6 +870,11 @@
   .lg\:mb-13\.5 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 13.5);
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:size-23\.5 {
