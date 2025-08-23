@@ -85,6 +85,9 @@
 @utility hover-opacity-75 {
   @apply transition duration-200 hover:opacity-75;
 }
+@utility bg-hover-primary {
+  @apply bg-primary transition duration-200 hover:bg-primary/80;
+}
 
 
 h1, h2, h3 {
