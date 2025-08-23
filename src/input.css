@@ -13,6 +13,9 @@
   --color-brand-yellow-500: #F0E263;
   --color-brand-blue-600: #084FC7;
   --color-brand-blue-400: #7F56D9;
+  /* Font Size */
+  --text-basic-23: 1.4375rem;
+  --text-basic-40: 2.5rem;
 }
 
 @layer base {
@@ -27,6 +30,7 @@
   button {
     @apply cursor-pointer
   }
+
 }
 
 @utility container-base {
@@ -80,4 +84,11 @@
 
 @utility hover-opacity-75 {
   @apply transition duration-200 hover:opacity-75;
+}
+
+
+
+
+h1, h2, h3 {
+  @apply font-bold
 }
