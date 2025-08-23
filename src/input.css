@@ -7,12 +7,13 @@
   /* Colors */
   --color-primary: #1e1e1e;
   --color-secondary: #272727;
+  --color-dark: #28282c;
   --color-brand-gray-100: #e8e8e8;
   --color-brand-gray-700: #393939;
-  --color-brand-green-600: #AB803B;
-  --color-brand-yellow-500: #F0E263;
-  --color-brand-blue-600: #084FC7;
-  --color-brand-blue-400: #7F56D9;
+  --color-brand-green-600: #ab803b;
+  --color-brand-yellow-500: #f0e263;
+  --color-brand-blue-600: #084fc7;
+  --color-brand-blue-400: #7f56d9;
   /* Font Size */
   --text-basic-23: 1.4375rem;
   --text-basic-40: 2.5rem;
@@ -28,13 +29,12 @@
   }
 
   button {
-    @apply cursor-pointer
+    @apply cursor-pointer;
   }
-
 }
 
 @utility container-base {
-  @apply w-full max-w-7xl mx-auto px-6 lg:px-8 xl:px-10
+  @apply w-full max-w-7xl mx-auto px-6 lg:px-8 xl:px-10;
 }
 
 @utility bg-gradient-display {
@@ -89,7 +89,42 @@
   @apply bg-primary transition duration-200 hover:bg-primary/80;
 }
 
+h1,
+h2,
+h3 {
+  @apply font-bold;
+}
 
-h1, h2, h3 {
-  @apply font-bold
+
+.circle::after {
+  content: "";
+  background: #28282C;
+  opacity: 0.2;
+  animation: pulse 2.5s ease-in-out infinite;
+  @apply size-full absolute z-0 rounded-full;
+}
+
+.circle::before {
+  content: "";
+  background: #28282C;
+  opacity: 0.5;
+  animation: pulse 2.5s ease-in-out infinite;
+  animation-delay: -1.2s; 
+  @apply size-24 lg:size-32 absolute z-10 rounded-full;
+}
+
+/* Pulsatsiya */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }
