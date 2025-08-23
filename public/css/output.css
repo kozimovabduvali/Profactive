@@ -1303,6 +1303,11 @@
       margin-inline: calc(var(--spacing) * 0) !important;
     }
   }
+  .xl\:hidden {
+    @media (width >= 80rem) {
+      display: none;
+    }
+  }
 }
 @layer base {
   html {
