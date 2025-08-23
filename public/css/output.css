@@ -634,6 +634,10 @@
     font-size: var(--text-basic-23);
     line-height: calc(var(--spacing) * 5.5);
   }
+  .text-basic-23\/8\.5 {
+    font-size: var(--text-basic-23);
+    line-height: calc(var(--spacing) * 8.5);
+  }
   .text-basic-23\/8\.75 {
     font-size: var(--text-basic-23);
     line-height: calc(var(--spacing) * 8.75);
