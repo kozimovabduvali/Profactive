@@ -472,9 +472,9 @@
                 Получайте 16% с каждой продажи!
               </p>
 
-              <h1 class="font-bold text-primary text-basic-40/12.5 mb-11 lg:mb-13.5">
+              <h2 class="font-bold text-primary text-3xl md:text-basic-40/12.5 mb-11 lg:mb-13.5">
                 Уже зарегистрированы <br class="max-lg:hidden"> в реферальной программе?
-              </h1>
+              </h2>
 
               <button class="bg-hover-primary rounded-[14px] py-5 px-13.5">
                 Узнать подробнее
@@ -502,7 +502,7 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- Почему стоит выбрать -->
     <section class="mb-31">
       <div>
         <h2 class="text-basic-40 md:text-center mb-11">
@@ -510,12 +510,17 @@
           <span class="text-gradient-display">Profactive</span>
         </h2>
 
+        <!-- Vieo Play -->
         <div class="relative h-96 md:h-100 lg:h-136 overflow-hidden rounded-3xl">
           <img class="relative z-0 size-full object-cover" src="./assets/images/popular-2.jpg" alt="Img">
-          <div class="flex items-center justify-center rounded-full absolute z-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-            <div class="circle relative rounded-full overflow-hidden size-31 lg:size-41 flex items-center justify-center">
-              <button class="relative z-20 bg-gradient-display size-17.5 lg:size-23.5 rounded-full flex items-center justify-center shrink-0">
-                <svg class="ml-2 h-8 w-9 lg:h-11 lg:w-12.5" viewBox="0 0 33 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div
+            class="flex items-center justify-center rounded-full absolute z-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+            <div
+              class="circle relative rounded-full overflow-hidden size-31 lg:size-41 flex items-center justify-center">
+              <button
+                class="relative z-20 bg-gradient-display size-17.5 lg:size-23.5 rounded-full flex items-center justify-center shrink-0">
+                <svg class="ml-2 h-8 w-9 lg:h-11 lg:w-12.5" viewBox="0 0 33 44" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M33 22L0 43.6506V0.349365L33 22Z" fill="#28282C" />
                 </svg>
               </button>
@@ -524,7 +529,171 @@
         </div>
       </div>
     </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section class="mb-31">
+      <div>
+        <h2 class="text-basic-40 md:text-center mb-11">
+          Часто задаваемые
+          <span class="text-gradient-display">вопросы</span>
+        </h2>
+
+        <!-- Accourdions -->
+        <div class="space-y-6">
+          <!-- Где разместить мою ссылку? -->
+          <div x-data="{ open: false }" class="w-full">
+            <button @click="open = !open"
+              class="bg-white w-full flex items-center justify-between border-2 border-brand-gray-700 rounded-[18px] py-5 px-6">
+              <span class="text-basic-23/5.5 text-primary">
+                Где разместить мою ссылку?
+              </span>
+
+              <div class="p-2">
+                <svg :class="open ? 'rotate-45' : ''" class="transition-transform duration-300" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.58325 8.5835V0.0834961H11.4166V8.5835H19.9166V11.4168H11.4166V19.9168H8.58325V11.4168H0.083252V8.5835H8.58325Z"
+                    fill="#AB803B" />
+                </svg>
+              </div>
+            </button>
+
+            <!-- Accourdion Content -->
+            <div x-show="open" :class="open ? '!block' : 'hidden'"
+              class="bg-white hidden border-2 border-brand-gray-700 rounded-[18px] py-5 px-6 mt-3">
+              <p class="text-primary/50 text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nemo maiores totam at. Similique labore
+                fugit numquam itaque ab sint consequatur? Eveniet, maiores fugiat. Veritatis culpa impedit nemo
+                voluptatibus ut.
+              </p>
+            </div>
+          </div>
+
+          <!-- Сколько можно получить за рекомендацию? -->
+          <div x-data="{ open: false }" class="w-full">
+            <button @click="open = !open"
+              class="bg-white w-full flex items-center justify-between gap-4 border-2 border-brand-gray-700 rounded-[18px] py-5 px-6">
+              <span class="text-basic-23/5.5 text-primary">
+                Сколько можно получить за рекомендацию?
+              </span>
+
+              <div class="p-2">
+                <svg :class="open ? 'rotate-45' : ''" class="transition-transform duration-300" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.58325 8.5835V0.0834961H11.4166V8.5835H19.9166V11.4168H11.4166V19.9168H8.58325V11.4168H0.083252V8.5835H8.58325Z"
+                    fill="#AB803B" />
+                </svg>
+              </div>
+            </button>
+
+            <!-- Accourdion Content -->
+            <div x-show="open" :class="open ? '!block' : 'hidden'"
+              class="bg-white hidden border-2 border-brand-gray-700 rounded-[18px] py-5 px-6 mt-3">
+              <p class="text-primary/50 text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nemo maiores totam at. Similique labore
+                fugit numquam itaque ab sint consequatur? Eveniet, maiores fugiat. Veritatis culpa impedit nemo
+                voluptatibus ut.
+              </p>
+            </div>
+          </div>
+
+          <!-- Где я могу увидеть статистику? -->
+          <div x-data="{ open: false }" class="w-full">
+            <button @click="open = !open"
+              class="bg-white w-full flex items-center justify-between gap-4 border-2 border-brand-gray-700 rounded-[18px] py-5 px-6">
+              <span class="text-basic-23/5.5 text-primary">
+                Где я могу увидеть статистику?
+              </span>
+
+              <div class="p-2">
+                <svg :class="open ? 'rotate-45' : ''" class="transition-transform duration-300" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.58325 8.5835V0.0834961H11.4166V8.5835H19.9166V11.4168H11.4166V19.9168H8.58325V11.4168H0.083252V8.5835H8.58325Z"
+                    fill="#AB803B" />
+                </svg>
+              </div>
+            </button>
+
+            <!-- Accourdion Content -->
+            <div x-show="open" :class="open ? '!block' : 'hidden'"
+              class="bg-white hidden border-2 border-brand-gray-700 rounded-[18px] py-5 px-6 mt-3">
+              <p class="text-primary/50 text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nemo maiores totam at. Similique labore
+                fugit numquam itaque ab sint consequatur? Eveniet, maiores fugiat. Veritatis culpa impedit nemo
+                voluptatibus ut.
+              </p>
+            </div>
+          </div>
+
+          <!-- Когда мне придёт бонус за рекомендацию? -->
+          <div x-data="{ open: false }" class="w-full">
+            <button @click="open = !open"
+              class="bg-white w-full flex items-center justify-between gap-4 border-2 border-brand-gray-700 rounded-[18px] py-5 px-6">
+              <span class="text-basic-23/5.5 text-primary">
+                Когда мне придёт бонус за рекомендацию?
+              </span>
+
+              <div class="p-2">
+                <svg :class="open ? 'rotate-45' : ''" class="transition-transform duration-300" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.58325 8.5835V0.0834961H11.4166V8.5835H19.9166V11.4168H11.4166V19.9168H8.58325V11.4168H0.083252V8.5835H8.58325Z"
+                    fill="#AB803B" />
+                </svg>
+              </div>
+            </button>
+
+            <!-- Accourdion Content -->
+            <div x-show="open" :class="open ? '!block' : 'hidden'"
+              class="bg-white hidden border-2 border-brand-gray-700 rounded-[18px] py-5 px-6 mt-3">
+              <p class="text-primary/50 text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nemo maiores totam at. Similique labore
+                fugit numquam itaque ab sint consequatur? Eveniet, maiores fugiat. Veritatis culpa impedit nemo
+                voluptatibus ut.
+              </p>
+            </div>
+          </div>
+
+          <!-- Что, если мой друг купил курс не по моей ссылке? -->
+          <div x-data="{ open: false }" class="w-full">
+            <button @click="open = !open"
+              class="bg-white w-full flex items-center justify-between gap-4 border-2 border-brand-gray-700 rounded-[18px] py-5 px-6">
+              <span class="text-basic-23/5.5 text-primary">
+                Что, если мой друг купил курс не по моей ссылке?
+              </span>
+
+              <div class="p-2">
+                <svg :class="open ? 'rotate-45' : ''" class="transition-transform duration-300" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.58325 8.5835V0.0834961H11.4166V8.5835H19.9166V11.4168H11.4166V19.9168H8.58325V11.4168H0.083252V8.5835H8.58325Z"
+                    fill="#AB803B" />
+                </svg>
+              </div>
+            </button>
+
+            <!-- Accourdion Content -->
+            <div x-show="open" :class="open ? '!block' : 'hidden'"
+              class="bg-white hidden border-2 border-brand-gray-700 rounded-[18px] py-5 px-6 mt-3">
+              <p class="text-primary/50 text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nemo maiores totam at. Similique labore
+                fugit numquam itaque ab sint consequatur? Eveniet, maiores fugiat. Veritatis culpa impedit nemo
+                voluptatibus ut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="container-base">
+    <div>
+      <a href="#"></a>
+    </div>
+  </footer>
 
 
   <!-- Swiper JS -->
