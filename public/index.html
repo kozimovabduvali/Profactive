@@ -22,7 +22,7 @@
       </a>
 
       <!-- Links -->
-      <div class="max-[1170px]:hidden flex items-center gap-9.5">
+      <div class="max-[1200px]:hidden flex items-center gap-9.5">
         <div class="relative group">
           <a class="flex items-center gap-3.5 transition duration-200 hover:text-brand-yellow-500" href="#">
             <span class="text-lg">
@@ -86,7 +86,7 @@
         </button>
 
         <!-- Mobile Menu -->
-        <button @click="open = true" class="min-[1170px]:hidden transition duration-200 hover:text-brand-yellow-500">
+        <button @click="open = true" class="min-[1200px]:hidden transition duration-200 hover:text-brand-yellow-500">
           <svg width="20" height="20" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.25 0.666626H25.75V3.49996H0.25V0.666626ZM0.25 10.5833H25.75V13.4166H0.25V10.5833ZM0.25 20.5H25.75V23.3333H0.25V20.5Z"
@@ -97,7 +97,7 @@
     </nav>
 
     <!-- Overlay + Mobile Menu -->
-    <div x-show="open" class="fixed inset-0 z-40 min-[1170px]:hidden" x-transition.opacity>
+    <div x-show="open" class="fixed inset-0 z-40 min-[1200px]:hidden" x-transition.opacity>
       <!-- Overlay -->
       <div class="absolute inset-0 bg-primary/50" @click="open = false">
       </div>
