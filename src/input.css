@@ -110,7 +110,7 @@ h3 {
   opacity: 0.5;
   animation: pulse 2.5s ease-in-out infinite;
   animation-delay: -1.2s; 
-  @apply size-24 lg:size-32 absolute z-10 rounded-full;
+  @apply size-10 md:size-24 lg:size-32 absolute z-10 rounded-full;
 }
 
 /* Pulsatsiya */
