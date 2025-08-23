@@ -1,1 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  /* Colors */
+  --color-primary: #1e1e1e;
+  --color-secondary: #272727;
+  --color-brand-gray-100: #e8e8e8;
+  --color-brand-gray-700: #393939;
+  --color-brand-green-600: #AB803B;
+  --color-brand-yellow-500: #F0E263;
+  --color-brand-blue-600: #084FC7;
+  --color-brand-blue-400: #7F56D9;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden bg-primary font-inter font-semibold text-white text-lg leading-none;
+  }
+
+  button {
+    @apply cursor-pointer
+  }
+}
+
+@utility container-base {
+  @apply w-full max-w-7xl mx-auto px-6 lg:px-8 xl:px-10
+}
+
+@utility bg-gradient-display {
+  background: var(
+    --111,
+    linear-gradient(
+      237deg,
+      #ab803b 18.42%,
+      #cdb14f 31.58%,
+      #f0e263 45.84%,
+      #d9b84a 59.44%,
+      #c28d31 74.36%
+    )
+  );
+}
+
+@utility bg-gradient-banner {
+  background: linear-gradient(
+    243deg,
+    #ab803b -21.87%,
+    #cdb14f 0.93%,
+    #f0e263 25.64%,
+    #d9b84a 49.2%,
+    #c28d31 75.05%
+  );
+}
+
+/* @utility gradient-border {
+} */
+
+@utility text-gradient-display {
+  background: var(
+    --111,
+    linear-gradient(
+      237deg,
+      #ab803b 18.42%,
+      #cdb14f 31.58%,
+      #f0e263 45.84%,
+      #d9b84a 59.44%,
+      #c28d31 74.36%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility hover-opacity-75 {
+  @apply transition duration-200 hover:opacity-75;
+}

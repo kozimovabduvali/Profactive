@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
   <link rel="stylesheet" href="./css/output.css">
 </head>
+
 <body>
-  hello world
+  <!-- Header -->
+  <header class="py-6">
+    <nav class="container-base flex items-center justify-between gap-5">
+      <!-- Logo -->
+      <a href="#">
+        <img src="./assets/svgs/logo.svg" alt="Logo">
+      </a>
+
+      <!-- Links -->
+      <div class="max-[1170px]:hidden flex items-center gap-9.5">
+        <div class="relative group">
+          <a class="flex items-center gap-3.5 hover-opacity-75" href="#">
+            <span class="text-lg">
+              Каталог курсов
+            </span>
+            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.99999 5.17192L11.95 0.221924L13.364 1.63592L6.99999 7.99992L0.635986 1.63592L2.04999 0.221924L6.99999 5.17192Z"
+                fill="url(#paint0_linear_4001_5)" />
+              <defs>
+                <linearGradient id="paint0_linear_4001_5" x1="10.512" y1="1.1797" x2="5.01273" y2="7.04877"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#AB803B" />
+                  <stop offset="0.235294" stop-color="#CDB14F" />
+                  <stop offset="0.490196" stop-color="#F0E263" />
+                  <stop offset="0.733333" stop-color="#D9B84A" />
+                  <stop offset="1" stop-color="#C28D31" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+
+          <div class="absolute z-10 hidden group-hover:block bg-white rounded-lg w-full p-3 space-y-1.5">
+            <a class="block text-primary hover-opacity-75" href="#">
+              Link 1
+            </a>
+            <a class="block text-primary hover-opacity-75" href="#">
+              Link 1
+            </a>
+            <a class="block text-primary hover-opacity-75" href="#">
+              Link 1
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="hover-opacity-75 ">
+          Отзывы
+        </a>
+        <a href="#" class="hover-opacity-75 ">
+          Блог
+        </a>
+        <a href="#" class="hover-opacity-75 ">
+          Предложения
+        </a>
+        <a href="#" class="hover-opacity-75 ">
+          Услуги
+        </a>
+        <a href="#" class="hover-opacity-75 ">
+          О нас
+        </a>
+        <a href="#" class="hover-opacity-75 ">
+          Контакты
+        </a>
+      </div>
+
+      <!-- Login & Mobile Menu -->
+      <div class="flex items-center gap-6">
+        <button class="hover-opacity-75 font-semibold border-2 border-brand-green-600 px-8.5 py-3.25 rounded-full">
+          Войти
+        </button>
+
+        <!-- Mobile Menu -->
+        <button class="min-[1170px]:hidden transition duration-200 hover:text-brand-yellow-500">
+          <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.25 0.666626H25.75V3.49996H0.25V0.666626ZM0.25 10.5833H25.75V13.4166H0.25V10.5833ZM0.25 20.5H25.75V23.3333H0.25V20.5Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container-base">
+    <!-- Hero -->
+    <section class="max-lg:pt-32.5 mb-31">
+      <div class="relative flex max-md:flex-col md:items-center justify-between gap-x-7 gap-y-13.5">
+        <!-- Left -->
+        <div class="flex-1 w-full max-w-145">
+          <p class="font-medium text-xl text-white/50 mb-3.5">
+            Получайте 16% с каждой продажи!
+          </p>
+
+          <h1 class="font-bold text-[53px]/[64px] mb-11 lg:mb-13.5">
+            Учебный центр
+            <span class="text-gradient-display">Profactive</span>
+          </h1>
+
+          <button class="bg-gradient-display text-primary hover-opacity-75 rounded-[14px] py-5 px-13.5">
+            Узнать подробнее
+          </button>
+        </div>
+        <!-- Right -->
+        <div class="flex-1 md:max-w-121 aspect-square md:aspect-[484/544] relative overflow-hidden rounded-3xl">
+          <img class="relative z-0 size-full object-cover" src="./assets/images/main-hero.jpg" alt="img">
+          <div class="absolute z-10 top-0 left-0 size-full bg-white/30"></div>
+        </div>
+
+        <div class="max-lg:hidden absolute left-1/2 bottom-1/4 z-0 -translate-x-full translate-y-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <path d="M32 0L40.6429 23.3571L64 32L40.6429 40.6429L32 64L23.3571 40.6429L0 32L23.3571 23.3571L32 0Z"
+              fill="url(#paint0_linear_0_28)" />
+            <defs>
+              <linearGradient id="paint0_linear_0_28" x1="49.6592" y1="7.88094" x2="8.16231" y2="34.9448"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#AB803B" />
+                <stop offset="0.235294" stop-color="#CDB14F" />
+                <stop offset="0.490196" stop-color="#F0E263" />
+                <stop offset="0.733333" stop-color="#D9B84A" />
+                <stop offset="1" stop-color="#C28D31" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
