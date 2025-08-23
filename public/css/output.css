@@ -649,6 +649,10 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+  .text-lg\/\[1\] {
+    font-size: var(--text-lg);
+    line-height: 1;
+  }
   .text-basic-23 {
     font-size: var(--text-basic-23);
   }
