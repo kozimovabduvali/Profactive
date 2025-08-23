@@ -649,6 +649,10 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+  .text-lg\/5 {
+    font-size: var(--text-lg);
+    line-height: calc(var(--spacing) * 5);
+  }
   .text-lg\/\[1\] {
     font-size: var(--text-lg);
     line-height: 1;
