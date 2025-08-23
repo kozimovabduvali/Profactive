@@ -1312,8 +1312,8 @@ h1, h2, h3 {
   height: calc(var(--spacing) * 10);
   border-radius: calc(infinity * 1px);
   @media (width >= 48rem) {
-    width: calc(var(--spacing) * 24);
-    height: calc(var(--spacing) * 24);
+    width: calc(var(--spacing) * 20);
+    height: calc(var(--spacing) * 20);
   }
 }
 @keyframes pulsei {
