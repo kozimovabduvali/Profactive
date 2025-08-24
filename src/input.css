@@ -3,13 +3,14 @@
 @import "tailwindcss";
 
 @theme {
-  --font-inter: "Inter", sans-serif;
+  --font-inter: "Inter";
   /* Colors */
   --color-primary: #1e1e1e;
   --color-secondary: #272727;
   --color-dark: #28282c;
   --color-brand-gray-100: #e8e8e8;
   --color-brand-gray-700: #393939;
+  --color-brand-gray-600: #262B43;
   --color-brand-green-600: #ab803b;
   --color-brand-yellow-500: #f0e263;
   --color-brand-blue-600: #084fc7;
@@ -25,7 +26,7 @@
   }
 
   body {
-    @apply overflow-x-hidden bg-primary font-inter font-semibold text-white text-sm md:text-base lg:text-lg lg:leading-none;
+    @apply overflow-x-hidden bg-primary font-inter font-semibold text-white text-sm md:text-base lg:text-lg/7;
   }
 
   button {
