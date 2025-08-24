@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-7xl: 80rem;
@@ -250,6 +251,9 @@
   .z-20 {
     z-index: 20;
   }
+  .z-30 {
+    z-index: 30;
+  }
   .z-40 {
     z-index: 40;
   }
@@ -343,6 +347,12 @@
   .table {
     display: table;
   }
+  .aspect-\[510\/494\] {
+    aspect-ratio: 510/494;
+  }
+  .aspect-\[510\/\] {
+    aspect-ratio: 510/;
+  }
   .aspect-\[792\/544\] {
     aspect-ratio: 792/544;
   }
@@ -414,6 +424,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .max-h-136 {
     max-height: calc(var(--spacing) * 136);
   }
@@ -471,6 +484,12 @@
   .max-w-120 {
     max-width: calc(var(--spacing) * 120);
   }
+  .max-w-127 {
+    max-width: calc(var(--spacing) * 127);
+  }
+  .max-w-127\.5 {
+    max-width: calc(var(--spacing) * 127.5);
+  }
   .max-w-136 {
     max-width: calc(var(--spacing) * 136);
   }
@@ -509,6 +528,12 @@
   }
   .max-w-200 {
     max-width: calc(var(--spacing) * 200);
+  }
+  .max-w-235 {
+    max-width: calc(var(--spacing) * 235);
+  }
+  .max-w-235\.25 {
+    max-width: calc(var(--spacing) * 235.25);
   }
   .flex-1 {
     flex: 1;
@@ -874,6 +899,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-4\.5 {
+    padding-block: calc(var(--spacing) * 4.5);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -885,6 +913,9 @@
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-7 {
+    padding-top: calc(var(--spacing) * 7);
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
@@ -973,6 +1004,15 @@
   }
   .whitespace-nowrap {
     white-space: nowrap;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-black\/50 {
+    color: color-mix(in srgb, #000 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
   }
   .text-brand-gray-100 {
     color: var(--color-brand-gray-100);
@@ -1860,6 +1900,11 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .lg\:py-4\.5 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 4.5);
+    }
+  }
   .lg\:py-5 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
@@ -1935,6 +1980,12 @@
     @media (width >= 64rem) {
       font-size: var(--text-basic-23);
       line-height: calc(var(--spacing) * 8.75);
+    }
+  }
+  .lg\:text-basic-40\/11 {
+    @media (width >= 64rem) {
+      font-size: var(--text-basic-40);
+      line-height: calc(var(--spacing) * 11);
     }
   }
   .lg\:text-basic-40\/12\.5 {
