@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Популярные курсы</title>
+  <title>Главная курс</title>
   <link rel="stylesheet" href="./css/output.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -222,193 +222,210 @@
   </header>
   <!-- Main -->
   <main class="container-base">
+
+    <!-- Hero -->
+    <section class="mb-12 md:mb-20 lg:mb-31 pt-8">
+      <div class="bg-white text-primary rounded-3xl p-4 md:p-7 lg:p-11">
+        <div class="flex max-md:flex-col justify-between gap-3.5 lg:gap-5 max-md:mb-5">
+          <div>
+            <p class="font-medium text-primary/50 lg:text-xl max-md:mb-3">
+              Курс
+            </p>
+
+            <h2 class="md:hidden text-primary !font-semibold text-xl md:text-3xl lg:text-basic-40/12.5">
+              Руководитель <br>
+              образовательных программ
+            </h2>
+          </div>
+
+          <div class="whitespace-nowrap flex max-sm:flex-col-reverse sm:items-center gap-3 lg:gap-6">
+            <a href="./my-courses.html"
+              class="w-fit  hover-opacity-75 font-semibold border-2 border-brand-green-600 px-6 lg:px-8.5 py-2.5 rounded-full">
+              Реферальная программа
+            </a>
+
+            <a href="./course-catalogue.html"
+              class="w-fit bg-gradient-display hover-opacity-75 font-semibold text-primary rounded-full px-6 lg:px-8.5 py-2.5">
+              Продолжить обучение
+            </a>
+
+          </div>
+        </div>
+        <h2 class="max-md:hidden text-primary !font-semibold text-xl md:text-3xl lg:text-basic-40/12.5 md:mb-8.5">
+          Руководитель <br>
+          образовательных программ
+        </h2>
+
+
+        <div class="flex max-md:flex-col justify-between gap-3.5 lg:gap-5">
+          <div class="flex flex-wrap w-full gap-3.5 lg:gap-6">
+            <p class="lg:text-base font-semibold text-primary">
+              75%
+            </p>
+            <div class="w-full max-w-111 h-4.5 bg-primary/20 rounded-full">
+              <div class="h-full w-[75%] bg-gradient-display rounded-full"></div>
+            </div>
+            <p class="text-primary/50 font-medium lg:text-base leading-none">
+              393 курса, 264 часа, 351 академический час
+            </p>
+          </div>
+          <a href=""
+            class="font-medium underline underline-offset-4 text-primary transition duration-200 hover:text-primary/75">
+            Документация
+          </a>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Мои курсы -->
     <section class="mb-12 md:mb-20 lg:mb-31 lg:pt-20">
       <div>
         <div class="mb-5 md:mb-8 lg:mb-11">
-          <p class="text-white/50 lg:text-xl mb-3.5">
-            Получайте 16% с каждой продажи! </p>
-          <h2 class=" text-2xl md:text-4xl lg:text-[54px]">
-            Мои
-            <span class="text-gradient-display"> курсы</span>
+          <h2 class="text-xl md:text-3xl lg:text-basic-40">
+            Как учиться
+            <span class="text-gradient-display"> эффективно</span>
           </h2>
         </div>
 
-        <div x-data="showMore(6)">
-          <div
-            class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-11 mb-6 md:mb-9 lg:mb-13.5 font-semibold">
+        <div class="flex max-md:flex-col justify-between gap-6">
+          <!-- Left -->
+          <div class="max-w-193 w-full space-y-5 md:space-y-8 lg:space-y-11">
             <!-- 1 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/main-hero.png" alt="img">
+            <div class="bg-white text-primary rounded-3xl p-4 lg:p-6">
+              <div class="flex items-center gap-3 mb-3.5">
+                <div class="size-3.5 rounded-full bg-gradient-display"></div>
+                <span class="text-primary/50 font-medium">
+                  Мини-курс, 3 минуты
+                </span>
               </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 mb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
 
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
+              <h4 class="font-semibold text-base lg:text-basic-23 mb-4 lg:mb-6">
+                Инструкция по обучению на платформе Profactive
+              </h4>
+
+              <p class="font-medium">
+                Пройдено 100%
+              </p>
             </div>
-            <!-- 2 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-5.jpg" alt="img">
-
+            <!-- 1 -->
+            <div class="bg-white text-primary rounded-3xl p-4 lg:p-6">
+              <div class="flex items-center gap-3 mb-3.5">
+                <div class="size-3.5 rounded-full bg-gradient-display"></div>
+                <span class="text-primary/50 font-medium">
+                  Мини-курс, 3 минуты
+                </span>
               </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
 
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
+              <h4 class="font-semibold text-base lg:text-basic-23 mb-4 lg:mb-6">
+                Инструкция по обучению на платформе Profactive
+              </h4>
+
+              <p class="font-medium">
+                Пройдено 100%
+              </p>
             </div>
-            <!-- 3 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-3.png" alt="img">
-
+            <!-- 1 -->
+            <div class="bg-white text-primary rounded-3xl p-4 lg:p-6">
+              <div class="flex items-center gap-3 mb-3.5">
+                <div class="size-3.5 rounded-full bg-gradient-display"></div>
+                <span class="text-primary/50 font-medium">
+                  Мини-курс, 3 минуты
+                </span>
               </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
 
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
+              <h4 class="font-semibold text-base lg:text-basic-23 mb-4 lg:mb-6">
+                Инструкция по обучению на платформе Profactive
+              </h4>
+
+              <p class="font-medium">
+                Пройдено 100%
+              </p>
             </div>
-            <!-- 4 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-3.png" alt="img">
+            <!-- 1 -->
+            <div class="bg-white text-primary rounded-3xl p-4 lg:p-6">
+              <div class="flex items-center gap-3 mb-3.5">
+                <div class="size-3.5 rounded-full bg-gradient-display"></div>
+                <span class="text-primary/50 font-medium">
+                  Мини-курс, 3 минуты
+                </span>
               </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
 
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
+              <h4 class="font-semibold text-base lg:text-basic-23 mb-4 lg:mb-6">
+                Инструкция по обучению на платформе Profactive
+              </h4>
+
+              <p class="font-medium">
+                Пройдено 100%
+              </p>
             </div>
-            <!-- 5 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/main-hero.png" alt="img">
-
+            <!-- 1 -->
+            <div class="bg-white text-primary rounded-3xl p-4 lg:p-6">
+              <div class="flex items-center gap-3 mb-3.5">
+                <div class="size-3.5 rounded-full bg-gradient-display"></div>
+                <span class="text-primary/50 font-medium">
+                  Мини-курс, 3 минуты
+                </span>
               </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
 
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
+              <h4 class="font-semibold text-base lg:text-basic-23 mb-4 lg:mb-6">
+                Инструкция по обучению на платформе Profactive
+              </h4>
+
+              <p class="font-medium">
+                Пройдено 100%
+              </p>
             </div>
-            <!-- 6 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-6.png" alt="img">
-
+            <!-- 1 -->
+            <div class="bg-white text-primary rounded-3xl p-4 lg:p-6">
+              <div class="flex items-center gap-3 mb-3.5">
+                <div class="size-3.5 rounded-full bg-gradient-display"></div>
+                <span class="text-primary/50 font-medium">
+                  Мини-курс, 3 минуты
+                </span>
               </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
 
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
-            </div>
-            <!-- 7 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-5.jpg" alt="img">
+              <h4 class="font-semibold text-base lg:text-basic-23 mb-4 lg:mb-6">
+                Инструкция по обучению на платформе Profactive
+              </h4>
 
-              </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
-
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
-            </div>
-            <!-- 8 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-6.png" alt="img">
-
-              </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11 font-medium">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
-
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
+              <p class="font-medium">
+                Пройдено 100%
+              </p>
             </div>
           </div>
 
-          <!-- Show More -->
-          <button @click="toggle()" x-text="buttonText"
-            class="w-full block text-base lg:text-lg text-white border border-white rounded-[14px] leading-none py-3.5 lg:py-5 transition duration-200 hover:border-brand-yellow-500 hover:text-brand-yellow-500 font-semibold">
-          </button>
+          <!-- Right -->
+          <div class="md:max-w-91 w-full">
+            <!-- 1 -->
+            <div class="bg-white text-primary rounded-3xl p-4 lg:p-6">
+              <div class="border-b border-primary/20 mb-4 lg:mb-6 pb-2 lg:pb-3.5">
+                <h4 class="max-md:text-center font-semibold text-lg lg:text-basic-23">
+                  Содержание курса
+                </h4>
+              </div>
+              <div class="space-y-2 md:space-y-3.5">
+                <p class="font-medium">
+                  1.1. Мини-курс, 3 минуты
+                </p>
+                <p class="font-medium">
+                  1.1. Мини-курс, 3 минуты
+                </p>
+                <p class="font-medium">
+                  1.1. Мини-курс, 3 минуты
+                </p>
+                <p class="font-medium">
+                  1.1. Мини-курс, 3 минуты
+                </p>
+                <p class="font-medium">
+                  1.1. Мини-курс, 3 минуты
+                </p>
+                <p class="font-medium">
+                  1.1. Мини-курс, 3 минуты
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -647,43 +664,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Alpine.js -->
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
-  <script>
-    function showMore(step = 6) {
-      return {
-        step,
-        visible: step,
-        items: [],
-        buttonText: "Показать еще новости",
-
-        init() {
-          this.items = this.$el.querySelectorAll(".grid > div");
-          this.update();
-        },
-
-        update() {
-          this.items.forEach((el, i) => {
-            el.style.display = i < this.visible ? "block" : "none";
-          });
-
-          if (this.visible < this.items.length) {
-            this.buttonText = "Показать еще";
-          } else {
-            this.buttonText = "Скрыть новости";
-          }
-        },
-
-        toggle() {
-          if (this.visible < this.items.length) {
-            this.visible += this.step;
-          } else {
-            this.visible = this.step;
-          }
-          this.update();
-        }
-      }
-    }
-  </script>
   <script src="./js/app.js"></script>
 </body>
 
