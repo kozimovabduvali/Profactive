@@ -288,7 +288,7 @@
     function initMap() {
       ymaps.ready(function () {
         let map = new ymaps.Map("map", {
-          center: [40.8153, 72.2833],
+          center: [55.7558, 37.6173],
           zoom: 14,
           controls: []
         });
@@ -303,7 +303,7 @@
         let MyIconLayout = ymaps.templateLayoutFactory.createClass(customSVG);
 
         let placemark = new ymaps.Placemark(
-          [40.8153, 72.2833], // Marker joyi
+          [55.7558, 37.6173], // Marker joyi
           { hintContent: 'Andijon' },
           { iconLayout: MyIconLayout, iconShape: { type: 'Circle', coordinates: [26, 30], radius: 30 } }
         );
