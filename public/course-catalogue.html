@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Популярные курсы</title>
+  <title>Каталог курсов</title>
   <link rel="stylesheet" href="./css/output.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -179,14 +179,196 @@
       <div>
         <div class="mb-5 md:mb-8 lg:mb-11">
           <p class="text-white/50 lg:text-xl mb-3.5">
-            Получайте 16% с каждой продажи! </p>
+            Получайте 16% с каждой продажи! </p>
           <h2 class=" text-2xl xs:text-3xl sm:text-5xl lg:text-[54px]">
-            <span class="text-gradient-display">Популярные</span> курсы
+            <span class="text-gradient-display">Каталог</span> Каталог курсов
           </h2>
         </div>
 
-        <div x-data="showMore(6)">
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-11 mb-6 md:mb-9 lg:mb-13.5">
+        <div class="flex max-md:flex-col gap-5 justify-between">
+          <!-- Left -->
+          <div class="md:max-w-87.5 w-full space-y-3.5 md:space-y-6">
+            <!-- Курсы повышения квалификации -->
+            <div x-data="{ open: false }" class="w-full relative" @click.outside="open = false">
+              <button @click="open = !open"
+                class="text-left w-full flex items-center justify-between border-b border-white/20 pb-3.5">
+                <span class="md:text-lg/5 lg:text-xl text-white">
+                  Курсы повышения
+                  квалификации
+                </span>
+
+                <div class="p-2">
+                  <svg :class="open ? '-rotate-180' : ''"
+                    class="transition-transform duration-300 w-4 lg:w-5 h-2 md:h-3" viewBox="0 0 20 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 7.66021L17.0125 0.647705L19.0157 2.65087L10 11.6665L0.984375 2.65087L2.98754 0.647705L10 7.66021Z"
+                      fill="url(#paint0_linear_2052_80)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_2052_80" x1="14.9753" y1="2.00456" x2="7.18476" y2="10.3191"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AB803B" />
+                        <stop offset="0.235294" stop-color="#CDB14F" />
+                        <stop offset="0.490196" stop-color="#F0E263" />
+                        <stop offset="0.733333" stop-color="#D9B84A" />
+                        <stop offset="1" stop-color="#C28D31" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Accordion Content -->
+              <div x-show="open" :class="open ? '!block' : 'hidden'" class="hidden mt-3 lg:mt-6" @click.stop>
+                <p class="text-base">
+                  Повышение квалификации
+                </p>
+              </div>
+            </div>
+
+            <!-- Курсы переподготовки -->
+            <div x-data="{ open: true }" class="w-full relative" @click.outside="open = false">
+              <button @click="open = !open"
+                class="text-left w-full flex items-center justify-between border-b border-white/20 pb-3.5">
+                <span class="md:text-lg/5 lg:text-xl text-white">
+                  Курсы переподготовки
+                </span>
+
+                <div class="p-2">
+                  <svg :class="open ? '-rotate-180' : ''"
+                    class="transition-transform duration-300 w-4 lg:w-5 h-2 md:h-3" viewBox="0 0 20 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 7.66021L17.0125 0.647705L19.0157 2.65087L10 11.6665L0.984375 2.65087L2.98754 0.647705L10 7.66021Z"
+                      fill="url(#paint0_linear_2052_80)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_2052_80" x1="14.9753" y1="2.00456" x2="7.18476" y2="10.3191"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AB803B" />
+                        <stop offset="0.235294" stop-color="#CDB14F" />
+                        <stop offset="0.490196" stop-color="#F0E263" />
+                        <stop offset="0.733333" stop-color="#D9B84A" />
+                        <stop offset="1" stop-color="#C28D31" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Accordion Content -->
+              <div x-show="open" :class="open ? '!block' : 'hidden'" class="hidden mt-3 lg:mt-6" @click.stop>
+                <div class="space-y-2.5">
+                  <!-- Custom checkbox -->
+                  <div class="cursor-pointer flex items-center space-x-2 select-none">
+                    <input type="checkbox" id="select-all" class="cursor-pointer checkbox-custom">
+                    <label for="select-all" class="cursor-pointer custom-label text-white font-medium">
+                      Курс 1
+                    </label>
+                  </div>
+                  <!-- Custom checkbox -->
+                  <div class="cursor-pointer flex items-center space-x-2 select-none">
+                    <input type="checkbox" id="select-2" class="cursor-pointer checkbox-custom">
+                    <label for="select-2" class="cursor-pointer custom-label text-white font-medium">
+                      Курс 2
+                    </label>
+                  </div>
+                  <!-- Custom checkbox -->
+                  <div class="cursor-pointer flex items-center space-x-2 select-none">
+                    <input type="checkbox" id="select-3" class="cursor-pointer checkbox-custom">
+                    <label for="select-3" class="cursor-pointer custom-label text-white font-medium">
+                      Курс 3
+                    </label>
+                  </div>
+                  <!-- Custom checkbox -->
+                  <div class="cursor-pointer flex items-center space-x-2 select-none">
+                    <input type="checkbox" id="select-4" class="cursor-pointer checkbox-custom">
+                    <label for="select-4" class="cursor-pointer custom-label text-white font-medium">
+                      Курс 4
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Общеразвивающие курсы для взрослых -->
+            <div x-data="{ open: false }" class="w-full relative" @click.outside="open = false">
+              <button @click="open = !open"
+                class="text-left w-full flex items-center justify-between border-b border-white/20 pb-3.5">
+                <span class="md:text-lg/5 lg:text-xl text-white">
+                  Общеразвивающие курсы
+                  для взрослых
+                </span>
+
+                <div class="p-2">
+                  <svg :class="open ? '-rotate-180' : ''"
+                    class="transition-transform duration-300 w-4 lg:w-5 h-2 md:h-3" viewBox="0 0 20 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 7.66021L17.0125 0.647705L19.0157 2.65087L10 11.6665L0.984375 2.65087L2.98754 0.647705L10 7.66021Z"
+                      fill="url(#paint0_linear_2052_80)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_2052_80" x1="14.9753" y1="2.00456" x2="7.18476" y2="10.3191"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AB803B" />
+                        <stop offset="0.235294" stop-color="#CDB14F" />
+                        <stop offset="0.490196" stop-color="#F0E263" />
+                        <stop offset="0.733333" stop-color="#D9B84A" />
+                        <stop offset="1" stop-color="#C28D31" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Accordion Content -->
+              <div x-show="open" :class="open ? '!block' : 'hidden'" class="hidden mt-3 lg:mt-6" @click.stop>
+                <p class="text-base">
+                  Повышение квалификации
+                </p>
+              </div>
+            </div>
+
+            <!-- Общеразвивающие курсы для детей -->
+            <div x-data="{ open: false }" class="w-full relative" @click.outside="open = false">
+              <button @click="open = !open"
+                class="text-left w-full flex items-center justify-between border-b border-white/20 pb-3.5">
+                <span class="md:text-lg/5 lg:text-xl text-white">
+                  Общеразвивающие курсы
+                  для детей
+                </span>
+
+                <div class="p-2">
+                  <svg :class="open ? '-rotate-180' : ''"
+                    class="transition-transform duration-300 w-4 lg:w-5 h-2 md:h-3" viewBox="0 0 20 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 7.66021L17.0125 0.647705L19.0157 2.65087L10 11.6665L0.984375 2.65087L2.98754 0.647705L10 7.66021Z"
+                      fill="url(#paint0_linear_2052_80)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_2052_80" x1="14.9753" y1="2.00456" x2="7.18476" y2="10.3191"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AB803B" />
+                        <stop offset="0.235294" stop-color="#CDB14F" />
+                        <stop offset="0.490196" stop-color="#F0E263" />
+                        <stop offset="0.733333" stop-color="#D9B84A" />
+                        <stop offset="1" stop-color="#C28D31" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Accordion Content -->
+              <div x-show="open" :class="open ? '!block' : 'hidden'" class="hidden mt-3 lg:mt-6" @click.stop>
+                <p class="text-base">
+                  Повышение квалификации
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- Right -->
+          <div class="w-full max-w-196.5 grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5 xl:gap-11 mb-6 md:mb-9 lg:mb-13.5">
             <!-- 1 -->
             <div class="group bg-white rounded-3xl overflow-hidden">
               <div class="h-40 md:h-56 w-full relative overflow-hidden">
@@ -269,96 +451,7 @@
                 </a>
               </div>
             </div>
-            <!-- 5 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/main-hero.png" alt="img">
-
-              </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
-
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
-            </div>
-            <!-- 6 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-6.png" alt="img">
-
-              </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
-
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
-            </div>
-            <!-- 7 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-5.jpg" alt="img">
-
-              </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
-
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
-            </div>
-            <!-- 8 -->
-            <div class="group bg-white rounded-3xl overflow-hidden">
-              <div class="h-40 md:h-56 w-full relative overflow-hidden">
-                <img class="relative z-0 size-full object-cover transition duration-200 group-hover:scale-105"
-                  src="./assets/images/popular-6.png" alt="img">
-
-              </div>
-              <div class="p-4 lg:p-6">
-                <h4 class="text-primary text-lg lg:text-basic-23/8.75 pb-2 md:mb-3.5">
-                  Повышение квалификации
-                </h4>
-                <p class="text-primary/50 lg:text-lg/7 mb-5 md:mb-8 lg:mb-11">
-                  Заполните форму, скопируйте ссылку, отправьте ее личным сообщением
-                </p>
-
-                <a href="#"
-                  class="block bg-gradient-display hover-opacity-75 text-primary text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5">
-                  Купить курс
-                </a>
-              </div>
-            </div>
           </div>
-
-          <!-- Show More -->
-          <button @click="toggle()" x-text="buttonText"
-            class="w-full block text-base lg:text-lg text-white border border-white rounded-[14px] leading-none py-3.5 lg:py-5 transition duration-200 hover:border-brand-yellow-500 hover:text-brand-yellow-500">
-          </button>
         </div>
       </div>
     </section>
@@ -596,43 +689,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Alpine.js -->
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
-  <script>
-    function showMore(step = 6) {
-      return {
-        step,
-        visible: step,
-        items: [],
-        buttonText: "Показать еще новости",
-
-        init() {
-          this.items = this.$el.querySelectorAll(".grid > div");
-          this.update();
-        },
-
-        update() {
-          this.items.forEach((el, i) => {
-            el.style.display = i < this.visible ? "block" : "none";
-          });
-
-          if (this.visible < this.items.length) {
-            this.buttonText = "Показать еще";
-          } else {
-            this.buttonText = "Скрыть новости";
-          }
-        },
-
-        toggle() {
-          if (this.visible < this.items.length) {
-            this.visible += this.step;
-          } else {
-            this.visible = this.step;
-          }
-          this.update();
-        }
-      }
-    }
-  </script>
   <script src="./js/app.js"></script>
 </body>
 

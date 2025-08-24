@@ -10,7 +10,7 @@
   --color-dark: #28282c;
   --color-brand-gray-100: #e8e8e8;
   --color-brand-gray-700: #393939;
-  --color-brand-gray-600: #262B43;
+  --color-brand-gray-600: #262b43;
   --color-brand-green-600: #ab803b;
   --color-brand-yellow-500: #f0e263;
   --color-brand-blue-600: #084fc7;
@@ -96,10 +96,9 @@ h3 {
   @apply font-bold;
 }
 
-
 .circle::after {
   content: "";
-  background: #28282C;
+  background: #28282c;
   opacity: 0.2;
   animation: pulse 2.5s ease-in-out infinite;
   @apply size-full absolute z-0 rounded-full;
@@ -107,10 +106,10 @@ h3 {
 
 .circle::before {
   content: "";
-  background: #28282C;
+  background: #28282c;
   opacity: 0.5;
   animation: pulse 2.5s ease-in-out infinite;
-  animation-delay: -1.2s; 
+  animation-delay: -1.2s;
   @apply size-10 md:size-24 lg:size-32 absolute z-10 rounded-full;
 }
 
@@ -130,12 +129,9 @@ h3 {
   }
 }
 
-
-
-
 .circle-item::after {
   content: "";
-  background: #28282C;
+  background: #28282c;
   opacity: 0.2;
   animation: pulsei 2.5s ease-in-out infinite;
   @apply size-full absolute z-0 rounded-full;
@@ -143,10 +139,10 @@ h3 {
 
 .circle-item::before {
   content: "";
-  background: #28282C;
+  background: #28282c;
   opacity: 0.5;
   animation: pulsei 2.5s ease-in-out infinite;
-  animation-delay: -1.2s; 
+  animation-delay: -1.2s;
   @apply size-10 md:size-20 absolute z-10 rounded-full;
 }
 
@@ -164,4 +160,19 @@ h3 {
     transform: scale(1.8);
     opacity: 0;
   }
+}
+
+.checkbox-custom {
+  @apply inline-block relative appearance-none min-w-5 size-5 lg:size-6.5 rounded bg-transparent border border-brand-green-600;
+}
+
+.checkbox-custom:checked {
+  @apply bg-gradient-display border-brand-green-600;
+}
+
+.checkbox-custom:checked::after {
+  content: "";
+  transform: translate(-50%, -50%);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M20.285 6.708l-11.145 11.145-5.145-5.145 1.415-1.414 3.729 3.728 9.732-9.732z"/></svg>');
+  @apply bg-contain bg-no-repeat absolute top-1/2 left-1/2 size-4;
 }
