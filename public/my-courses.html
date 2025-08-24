@@ -22,7 +22,7 @@
       </a>
 
       <!-- Links -->
-      <div class="max-[1200px]:hidden flex items-center gap-9.5">
+      <div class="hidden items-center gap-9.5">
         <div class="relative group">
           <a class="flex items-center gap-3.5 transition duration-200 hover:text-brand-yellow-500"
             href="./course-catalogue.html">
@@ -80,14 +80,48 @@
       </div>
 
       <!-- Login & Mobile Menu -->
-      <div class="flex items-center gap-6">
-        <a href="./login.html"
-          class="hover-opacity-75 font-semibold border-2 border-brand-green-600 px-5 lg:px-8.5 py-2 lg:py-3.25 rounded-full">
-          Войти
+      <div class="flex items-center gap-6 font-semibold">
+        <a href="./my-courses.html"
+          class="max-lg:hidden hover-opacity-75 font-semibold border-2 border-brand-green-600 px-5 lg:px-8.5 py-2 lg:py-3.25 rounded-full">
+          Мои курсы
         </a>
 
+        <a href="./course-catalogue.html"
+          class="max-lg:hidden bg-gradient-display hover-opacity-75 text-primary rounded-full px-5 lg:px-8.5 py-2 lg:py-3.25">
+          Программа курса
+        </a>
+
+
+        <div class="ml-9">
+          <div class=" flex items-center gap-3 cursor-pointer">
+            <div class="size-11 lg:size-15 overflow-hidden rounded-full">
+              <img class="size-full object-cover object-top" src="./assets/images/user-img.jpg" alt="img">
+            </div>
+
+            <p class="max-lg:hidden">
+              Наталья
+            </p>
+
+            <svg class="shrink-0" width="10" height="8" viewBox="0 0 10 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.99997 7.49998L0.0498047 2.54981L1.70064 0.900146L4.99997 4.20065L8.2993 0.900146L9.95014 2.54981L4.99997 7.49998Z"
+                fill="url(#paint0_linear_2070_127)" />
+              <defs>
+                <linearGradient id="paint0_linear_2070_127" x1="7.73173" y1="1.71285" x2="3.05672" y2="6.28661"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#AB803B" />
+                  <stop offset="0.235294" stop-color="#CDB14F" />
+                  <stop offset="0.490196" stop-color="#F0E263" />
+                  <stop offset="0.733333" stop-color="#D9B84A" />
+                  <stop offset="1" stop-color="#C28D31" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
         <!-- Mobile Menu -->
-        <button @click="open = true" class="min-[1200px]:hidden transition duration-200 hover:text-brand-yellow-500">
+        <button @click="open = true" class="transition duration-200 hover:text-brand-yellow-500">
           <svg width="20" height="20" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.25 0.666626H25.75V3.49996H0.25V0.666626ZM0.25 10.5833H25.75V13.4166H0.25V10.5833ZM0.25 20.5H25.75V23.3333H0.25V20.5Z"
@@ -98,7 +132,7 @@
     </nav>
 
     <!-- Overlay + Mobile Menu -->
-    <div x-show="open" class="fixed inset-0 z-40 min-[1200px]:hidden" x-transition.opacity>
+    <div x-show="open" class="fixed inset-0 z-40" x-transition.opacity>
       <!-- Overlay -->
       <div class="absolute inset-0 bg-primary/50" @click="open = false">
       </div>
@@ -113,7 +147,7 @@
         </button>
 
         <!-- Links -->
-        <div class="flex flex-col text-secondary gap-3">
+        <div class="flex flex-col text-secondary gap-3 mb-7">
           <div class="relative group">
             <a class="text-white flex items-center gap-3.5 transition duration-200 hover:text-brand-yellow-500"
               href="./course-catalogue.html">
@@ -168,6 +202,20 @@
           <a href="./contacts.html" class="text-white transition duration-200 hover:text-brand-yellow-500">
             Контакты
           </a>
+        </div>
+
+        <div class="flex lg:hidden flex-col text-center gap-3">
+          <a href="./my-courses.html"
+            class="hover-opacity-75 font-semibold border-2 border-brand-green-600 px-5 lg:px-8.5 py-2 lg:py-3.25 rounded-full">
+            Мои курсы
+          </a>
+
+          <a href="./course-catalogue.html"
+            class="bg-gradient-display hover-opacity-75 text-primary rounded-full px-5 lg:px-8.5 py-2 lg:py-3.25">
+            Программа курса
+          </a>
+
+
         </div>
       </div>
     </div>
