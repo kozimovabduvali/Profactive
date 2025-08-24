@@ -27,6 +27,7 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -389,8 +390,14 @@
   .h-70 {
     height: calc(var(--spacing) * 70);
   }
+  .h-fit {
+    height: fit-content;
+  }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .max-h-136 {
     max-height: calc(var(--spacing) * 136);
@@ -413,17 +420,11 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
-  }
   .w-55 {
     width: calc(var(--spacing) * 55);
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
   }
   .w-full {
     width: 100%;
@@ -442,6 +443,9 @@
   }
   .max-w-120 {
     max-width: calc(var(--spacing) * 120);
+  }
+  .max-w-136 {
+    max-width: calc(var(--spacing) * 136);
   }
   .max-w-145 {
     max-width: calc(var(--spacing) * 145);
@@ -676,6 +680,15 @@
   .border-brand-green-600 {
     border-color: var(--color-brand-green-600);
   }
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+  .border-primary\/20 {
+    border-color: color-mix(in srgb, #1e1e1e 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-primary) 20%, transparent);
+    }
+  }
   .border-white {
     border-color: var(--color-white);
   }
@@ -752,6 +765,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
@@ -769,6 +785,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -823,6 +842,9 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-basic-23 {
+    font-size: var(--text-basic-23);
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -834,6 +856,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -935,6 +961,10 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
   .select-all {
     -webkit-user-select: all;
     user-select: all;
@@ -966,6 +996,14 @@
       }
     }
   }
+  .placeholder\:text-primary\/20 {
+    &::placeholder {
+      color: color-mix(in srgb, #1e1e1e 20%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, var(--color-primary) 20%, transparent);
+      }
+    }
+  }
   .hover\:border-brand-yellow-500 {
     &:hover {
       @media (hover: hover) {
@@ -978,6 +1016,11 @@
       @media (hover: hover) {
         color: var(--color-brand-yellow-500);
       }
+    }
+  }
+  .focus\:border-primary {
+    &:focus {
+      border-color: var(--color-primary);
     }
   }
   .max-\[1200px\]\:hidden {
@@ -1213,6 +1256,11 @@
   .md\:p-6 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:p-8 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 8);
     }
   }
   .md\:\!px-6 {
@@ -1468,6 +1516,11 @@
       padding: calc(var(--spacing) * 6.25);
     }
   }
+  .lg\:p-11 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 11);
+    }
+  }
   .lg\:\!px-0 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 0) !important;
@@ -1554,6 +1607,12 @@
       line-height: calc(var(--spacing) * 12.5);
     }
   }
+  .lg\:text-basic-40\/13\.5 {
+    @media (width >= 64rem) {
+      font-size: var(--text-basic-40);
+      line-height: calc(var(--spacing) * 13.5);
+    }
+  }
   .lg\:text-lg {
     @media (width >= 64rem) {
       font-size: var(--text-lg);
@@ -1619,8 +1678,6 @@
     font-family: var(--font-inter);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
     color: var(--color-white);
     @media (width >= 48rem) {
       font-size: var(--text-base);
