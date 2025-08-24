@@ -229,34 +229,47 @@
       </div>
 
       <!-- Modal -->
-      <div
-        class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-30 max-w-250 w-full px-5 py-7">
+      <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-30 max-w-250 w-full px-5 py-7">
         <div class="bg-white rounded-3xl flex max-md:flex-col md:items-center max-md:gap-5 p-0.5">
           <!-- left -->
           <div class="p-5 md:p-8 lg:p-11">
             <form action="#" class="text-center w-full max-w-90 mx-auto">
               <p class="font-medium text-black/50">
-                1/3
+                2/3
               </p>
-  
-              <h2 class="text-primary text-2xl md:text-3xl lg:text-basic-40/11 mb-4">
-                Регистрация
-                в программе
+
+              <h2 class="text-primary text-2xl md:text-3xl lg:text-basic-40/11 mb-4 md:mb-8 lg:mb-11">
+                Поделиться
+                ссылкой
               </h2>
-  
-              <input type="email" name="email" id="email"
-                class="w-full border border-primary/20 rounded-[14px] px-6 py-2.5 lg:py-4.5 text-primary font-normal placeholder:text-primary/20 outline-none focus:border-primary mb-3.5 lg:mb-6"
-                placeholder="Email">
-              <input type="tex" name="parol" id="parol"
-                class="w-full border border-primary/20 rounded-[14px] px-6 py-2.5 lg:py-4.5 text-primary font-normal placeholder:text-primary/20 outline-none focus:border-primary mb-5 md:mb-8 lg:mb-11"
-                placeholder="Пароль">
-  
+
+              <button
+                class="flex items-center justify-between gap-3 w-full font-semibold border-2 border-brand-green-600 hover-opacity-75 text-primary lg:text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5 px-4 lg:px-6 mb-5 md:mb-8 lg:mb-13">
+                Уникальная ссылка
+
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 5V1C5 0.734784 5.10536 0.48043 5.29289 0.292893C5.48043 0.105357 5.73478 0 6 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V14C20 14.2652 19.8946 14.5196 19.7071 14.7071C19.5196 14.8946 19.2652 15 19 15H15V18.993C15 19.549 14.551 20 13.993 20H1.007C0.874722 20.0001 0.743717 19.9742 0.621483 19.9236C0.499248 19.8731 0.388185 19.7989 0.294651 19.7053C0.201116 19.6118 0.126946 19.5008 0.0763858 19.3785C0.0258259 19.2563 -0.000131057 19.1253 4.9756e-07 18.993L0.00300052 6.007C0.00300052 5.451 0.452 5 1.01 5H5ZM7 5H13.993C14.549 5 15 5.449 15 6.007V13H18V2H7V5ZM2.003 7L2 18H13V7H2.003Z"
+                    fill="url(#paint0_linear_2002_741)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_2002_741" x1="15.5185" y1="2.46279" x2="2.55072" y2="10.9203"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#AB803B" />
+                      <stop offset="0.235294" stop-color="#CDB14F" />
+                      <stop offset="0.490196" stop-color="#F0E263" />
+                      <stop offset="0.733333" stop-color="#D9B84A" />
+                      <stop offset="1" stop-color="#C28D31" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+
               <button
                 class="block w-full font-semibold bg-gradient-display hover-opacity-75 text-primary lg:text-lg text-center leading-none rounded-[14px] py-3.5 lg:py-5 mb-3.5 lg:mb-4">
                 Далее
               </button>
             </form>
-          </div>   
+          </div>
           <!-- Right -->
           <div class="md:max-w-127.5 aspect-video md:aspect-[510/494] rounded-3xl overflow-hidden">
             <img class="size-full object-cover" src="./assets/images/main-hero.png" alt="Img">
@@ -264,7 +277,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- Уже зарегистрированы в реферальной программе? -->
     <section class="mb-12 md:mb-20 lg:mb-31 pt-8">
@@ -307,8 +319,6 @@
       </div>
     </section>
   </main>
-
-
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
