@@ -17,14 +17,15 @@
     x-init="$watch('open', value => document.body.classList.toggle('overflow-hidden', value))" class="py-6">
     <nav class="container-base flex items-center justify-between gap-5">
       <!-- Logo -->
-      <a href="#">
+      <a href="./index.html">
         <img class="h-16 md:h-20 lg:h-26" src="./assets/svgs/logo.svg" alt="Logo">
       </a>
 
       <!-- Links -->
       <div class="max-[1200px]:hidden flex items-center gap-9.5">
         <div class="relative group">
-          <a class="flex items-center gap-3.5 transition duration-200 hover:text-brand-yellow-500" href="#">
+          <a class="flex items-center gap-3.5 transition duration-200 hover:text-brand-yellow-500"
+            href="./course-catalogue.html">
             <span class="text-lg">
               Каталог курсов
             </span>
@@ -45,45 +46,45 @@
             </svg>
           </a>
 
-          <div class="absolute z-10 hidden group-hover:block bg-white rounded-lg w-full p-3 space-y-1.5">
-            <a class="block text-primary hover-opacity-75" href="#">
-              Link 1
+          <div class="absolute z-10 hidden group-hover:block bg-white w-55 rounded-lg p-3 space-y-1.5">
+            <a class="block text-primary hover-opacity-75" href="./course-catalogue.html">
+              Каталог курсов
             </a>
-            <a class="block text-primary hover-opacity-75" href="#">
-              Link 1
+            <a class="block text-primary hover-opacity-75" href="./materials.html">
+              Материалы
             </a>
-            <a class="block text-primary hover-opacity-75" href="#">
-              Link 1
+            <a class="block text-primary hover-opacity-75" href="./popular.html">
+              Популярные курсы
             </a>
           </div>
         </div>
 
-        <a href="#" class="transition duration-200 hover:text-brand-yellow-500 ">
+        <a href="./reviews.html" class="transition duration-200 hover:text-brand-yellow-500 ">
           Отзывы
         </a>
         <a href="#" class="transition duration-200 hover:text-brand-yellow-500 ">
           Блог
         </a>
-        <a href="#" class="transition duration-200 hover:text-brand-yellow-500 ">
+        <a href="./referal.html" class="transition duration-200 hover:text-brand-yellow-500 ">
           Предложения
         </a>
-        <a href="#" class="transition duration-200 hover:text-brand-yellow-500 ">
+        <a href="./services.html" class="transition duration-200 hover:text-brand-yellow-500 ">
           Услуги
         </a>
-        <a href="#" class="transition duration-200 hover:text-brand-yellow-500 ">
+        <a href="./about.html" class="transition duration-200 hover:text-brand-yellow-500 ">
           О нас
         </a>
-        <a href="#" class="transition duration-200 hover:text-brand-yellow-500 ">
+        <a href="./contacts.html" class="transition duration-200 hover:text-brand-yellow-500 ">
           Контакты
         </a>
       </div>
 
       <!-- Login & Mobile Menu -->
       <div class="flex items-center gap-6">
-        <button
+        <a href="./login.html"
           class="hover-opacity-75 font-semibold border-2 border-brand-green-600 px-5 lg:px-8.5 py-2 lg:py-3.25 rounded-full">
           Войти
-        </button>
+        </a>
 
         <!-- Mobile Menu -->
         <button @click="open = true" class="min-[1200px]:hidden transition duration-200 hover:text-brand-yellow-500">
@@ -115,7 +116,7 @@
         <div class="flex flex-col text-secondary gap-3">
           <div class="relative group">
             <a class="text-white flex items-center gap-3.5 transition duration-200 hover:text-brand-yellow-500"
-              href="#">
+              href="./course-catalogue.html">
               <span>
                 Каталог курсов
               </span>
@@ -149,29 +150,28 @@
             </div>
           </div>
 
-          <a href="#" class="text-white transition duration-200 hover:text-brand-yellow-500">
+          <a href="./reviews.html" class="text-white transition duration-200 hover:text-brand-yellow-500">
             Отзывы
           </a>
           <a href="#" class="text-white transition duration-200 hover:text-brand-yellow-500">
             Блог
           </a>
-          <a href="#" class="text-white transition duration-200 hover:text-brand-yellow-500">
+          <a href="./referal.html" class="text-white transition duration-200 hover:text-brand-yellow-500">
             Предложения
           </a>
-          <a href="#" class="text-white transition duration-200 hover:text-brand-yellow-500">
+          <a href="./services.html" class="text-white transition duration-200 hover:text-brand-yellow-500">
             Услуги
           </a>
-          <a href="#" class="text-white transition duration-200 hover:text-brand-yellow-500">
+          <a href="./about.html" class="text-white transition duration-200 hover:text-brand-yellow-500">
             О нас
           </a>
-          <a href="#" class="text-white transition duration-200 hover:text-brand-yellow-500">
+          <a href="./contacts.html" class="text-white transition duration-200 hover:text-brand-yellow-500">
             Контакты
           </a>
         </div>
       </div>
     </div>
   </header>
-
   <!-- Main -->
   <main class="container-base">
     <!-- Hero -->
