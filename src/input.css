@@ -63,6 +63,62 @@
   );
 }
 
+.border-gradient {
+  position: relative;
+  background-clip: padding-box;
+  @apply relative rounded-full bg-primary border-2 border-transparent transition duration-300 hover:hover-opacity-75
+}
+
+.border-gradient::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: var(
+    --111,
+    linear-gradient(
+      237deg,
+      #ab803b 18.42%,
+      #cdb14f 31.58%,
+      #f0e263 45.84%,
+      #d9b84a 59.44%,
+      #c28d31 74.36%
+    )
+  );
+  z-index: -1;
+  border-radius: 999px;
+}
+
+.border-gradient-rounded-14 {
+  position: relative;
+  background-clip: padding-box;
+  @apply relative rounded-[14px] bg-primary border-2 border-transparent transition duration-300 hover:opacity-75
+}
+
+.border-gradient-rounded-14::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: var(
+    --111,
+    linear-gradient(
+      237deg,
+      #ab803b 18.42%,
+      #cdb14f 31.58%,
+      #f0e263 45.84%,
+      #d9b84a 59.44%,
+      #c28d31 74.36%
+    )
+  );
+  z-index: -1;
+  border-radius: 14px;
+}
+
 /* @utility gradient-border {
 } */
 

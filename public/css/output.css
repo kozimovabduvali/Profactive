@@ -26,8 +26,6 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -1939,6 +1937,77 @@
   button {
     cursor: pointer;
   }
+}
+.border-gradient {
+  position: relative;
+  background-clip: padding-box;
+  position: relative;
+  border-radius: calc(infinity * 1px);
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+  border-color: transparent;
+  background-color: var(--color-primary);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  &:hover {
+    @media (hover: hover) {
+      transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+      --tw-duration: 200ms;
+      transition-duration: 200ms;
+      &:hover {
+        @media (hover: hover) {
+          opacity: 75%;
+        }
+      }
+    }
+  }
+}
+.border-gradient::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: var( --111, linear-gradient( 237deg, #ab803b 18.42%, #cdb14f 31.58%, #f0e263 45.84%, #d9b84a 59.44%, #c28d31 74.36% ) );
+  z-index: -1;
+  border-radius: 999px;
+}
+.border-gradient-rounded-14 {
+  position: relative;
+  background-clip: padding-box;
+  position: relative;
+  border-radius: 14px;
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+  border-color: transparent;
+  background-color: var(--color-primary);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  &:hover {
+    @media (hover: hover) {
+      opacity: 75%;
+    }
+  }
+}
+.border-gradient-rounded-14::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: var( --111, linear-gradient( 237deg, #ab803b 18.42%, #cdb14f 31.58%, #f0e263 45.84%, #d9b84a 59.44%, #c28d31 74.36% ) );
+  z-index: -1;
+  border-radius: 14px;
 }
 h1, h2, h3 {
   --tw-font-weight: var(--font-weight-bold);
