@@ -26,7 +26,7 @@
   }
 
   body {
-    @apply overflow-x-hidden bg-primary font-inter text-white text-sm md:text-base lg:text-lg/7;
+    @apply overflow-x-hidden bg-primary font-inter text-white text-base lg:text-lg/7;
   }
 
   button {
